@@ -48,7 +48,7 @@ export default function EditRoute() {
   useEffect(() => {
     axios({
       method: "get",
-      url: `http://localhost:8000/blog/${id}`,
+      url: `https://careful-school-uniform-lamb.cyclic.app/blog/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: `${token}`,

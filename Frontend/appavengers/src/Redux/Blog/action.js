@@ -27,7 +27,7 @@ import {
   
     axios({
       method: "post",
-      url: "http://localhost:8000/blog/add",
+      url: "https://careful-school-uniform-lamb.cyclic.app/blog/add",
       data: value,
       headers: {
         Authorization: `${token}`,
@@ -45,7 +45,7 @@ import {
   
   export const action_get_Data = (token) => (dispatch) => {
     dispatch({ type: GET_DATA_REQ });
-    fetch(`http://localhost:8000/blog/${localStorage.getItem("userid")}`, {
+    fetch(`https://careful-school-uniform-lamb.cyclic.app/blog/${localStorage.getItem("userid")}`, {
       headers: {
         "Content-Type":"application/json",
         Authorization: `${token}`,

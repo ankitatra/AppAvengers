@@ -45,7 +45,7 @@ export default function Dashboard() {
     console.log(_id)
     axios({
       method: "delete",
-      url: `http://localhost:8000/blog/delete/${_id}`,
+      url: `https://careful-school-uniform-lamb.cyclic.app/blog/delete/${_id}`,
       headers: { Authorization: `${token}` },
     })
       .then((res) => {

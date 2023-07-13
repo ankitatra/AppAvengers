@@ -26,7 +26,7 @@ export default function SingleNote() {
   });
 
   const fetcdata=async()=>{
-    const response=await fetch("http://localhost:8000/blog/ad/64ad7e0487d968121a53cf8c")
+    const response=await fetch("https://careful-school-uniform-lamb.cyclic.app/blog/ad/64ad7e0487d968121a53cf8c")
     const data=await response.json()
     console.log(data)
   }
@@ -34,7 +34,7 @@ export default function SingleNote() {
     
     axios({
       method: "get",
-      url:`http://localhost:8000/blog/ad/${id}`,
+      url:`https://careful-school-uniform-lamb.cyclic.app/blog/ad/${id}`,
       headers: { Authorization:`${token}` },
     })
       .then((res) => {

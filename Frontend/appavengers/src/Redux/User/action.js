@@ -15,7 +15,7 @@ import {
 export const loginNow = (data) => async (dispatch) => {
   dispatch({ type: LOGIN_REQ });
   return axios
-    .post("http://localhost:8000/user/login", data)
+    .post("https://careful-school-uniform-lamb.cyclic.app/user/login", data)
     .then((res) => {
       dispatch({ type: LOGIN_SUCC, payload: res.data.token });
       console.log("loginnn",res.data.id)
@@ -32,7 +32,7 @@ export const loginNow = (data) => async (dispatch) => {
 export const registerNow = (data) => (dispatch) => {
   dispatch({ type: REGISTER_REQ });
   axios
-    .post("http://localhost:8000/user/register", data)
+    .post("https://careful-school-uniform-lamb.cyclic.app/user/register", data)
     .then((res) => {
       // console.log(res);
       dispatch({ type: REGISTER_SUCC });

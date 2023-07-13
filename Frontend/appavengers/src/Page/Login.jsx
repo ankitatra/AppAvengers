@@ -26,6 +26,7 @@ function Login() {
   const token = useSelector((store) => {
     return store.LoginReducer.token;
   });
+  console.log("token",token)
 
   useEffect(() => {
     if (token) {
