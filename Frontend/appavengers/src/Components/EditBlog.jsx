@@ -24,7 +24,7 @@ export default function EditRoute() {
     e.preventDefault();
     axios({
       method: "patch",
-      url: `http://localhost:8000/blog/edit/${id}`,
+      url: `https://careful-school-uniform-lamb.cyclic.app/blog/edit/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: `${token}`,
