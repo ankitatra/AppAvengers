@@ -20,3 +20,7 @@ const UserModel = mongoose.model("user", UserSchema);
 module.exports = {
   UserModel,
 };
+
+
+// "email":"ankita@gmail.com",
+// "password":"ankita"

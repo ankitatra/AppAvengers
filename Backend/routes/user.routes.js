@@ -27,10 +27,13 @@ user.post("/register", async (req, res) => {
 user.post("/login" , async(req,res)=>{
     try{
         const data = await UserModel.findOne({email:req.body.email})
+      
         bcrypt.compare(req.body.password , data.password , function(err,result){
             if(result){
-                const token = jwt.sign({authorID:data._id} , "blogscap");
-                res.status(202).send({"success" : "login successfull" , "token" : token })
+                const token = jwt.sign({userID:data._id} ,"blog");
+                res.status(202).send({"success" : "login successfull" , "token" : token ,id:data._id})
+                console.log(data._id)
+               
             }else{
                 res.status(404).send({"error" : "wrong password"})
             }

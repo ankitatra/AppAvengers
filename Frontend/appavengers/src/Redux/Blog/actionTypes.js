@@ -1,1 +1,7 @@
-node_modules
+export const GET_DATA_REQ = "GET_DATA_REQ";
+export const GET_DATA_SUCCESS = "GET_DATA_SUCCESS";
+export const GET_DATA_FAILURE = "GET_DATA_FAILURE";
+
+export const ADD_NOTES_REQUEST = "ADD_NOTES_REQUEST";
+export const ADD_NOTES_SUCCESS = "ADD_NOTES_SUCCESS";
+export const ADD_NOTES_FAILURE = "ADD_NOTES_FAILURE";

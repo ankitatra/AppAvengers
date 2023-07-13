@@ -1,4 +1,6 @@
 import React from "react";
+import home from "../asset/home.png"
+import logo from "../asset/logo.png"
 import { Box, Button, Image, Text } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
@@ -27,7 +29,7 @@ const Home = () => {
         ml={"12px"}mt={"10px"}
           boxSize="40px"
           objectFit="cover"
-          src="https://o.remove.bg/downloads/698f2348-ff4b-404f-8052-e2d8844b7103/1635070072489-removebg-preview.png"
+          src={logo}
           alt="Avenger"
         />
       
@@ -43,7 +45,7 @@ const Home = () => {
      <Box  style={{ 
       
       }}>
-        <Image  height="90%" src="https://o.remove.bg/downloads/a78fbc01-3ef4-411c-aa94-a95f8cfe9779/blog2-removebg-preview.png"/>
+        <Image  height="90%" src={home}/>
      </Box >
     
     </Box>
